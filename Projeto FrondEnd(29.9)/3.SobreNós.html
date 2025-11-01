@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - UCB Smart Assistant</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background-color: #f9f9f9; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 { margin: 0; font-size: 20px; }
+        nav { display: flex; gap: 15px; }
+        nav a {
+            background: #0066cc;
+            padding: 8px 15px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav a:hover { background: #3399ff; }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: #003366;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tabs button {
+            background: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .tabs button:hover {
+            background: #d0d0d0;
+        }
+        .tabs button.active {
+            background: #0066cc;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #0066cc;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 15px;
+            border-top: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UCB - Smart Assistente</h1>
+        <nav>
+            <a href="1.Index.html">Home</a>
+            <a href="2.Depoimentos.html">Depoimentos</a>
+            <a href="3.SobreNós.html">Sobre Nós</a>
+            <a href="6.Midia.html">Mídia</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Desenvolvedores</h2>
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab(event, 'Victor')">Victor Gabriel</button>
+            <button class="tablink" onclick="openTab(event, 'Rafael')">Rafael Freitas</button>
+            <button class="tablink" onclick="openTab(event, 'Marcus')">Marcus Henrique</button>
+            <button class="tablink" onclick="openTab(event, 'Raul')">Raul Balby</button>
+            <button class="tablink" onclick="openTab(event, 'Yago')">Yago Ramos</button>
+        </div>
+
+        <div id="Victor" class="tab-content active">
+            <p><strong>Victor Gabriel</strong> — Responsável pela <em>estrutura principal do site</em>, organização das páginas e integração geral.</p>
+        </div>
+        <div id="Rafael" class="tab-content">
+            <p><strong>Rafael Freitas</strong> — Desenvolveu a parte de <em>Depoimentos</em>, criando o estilo de fórum com paginação.</p>
+        </div>
+        <div id="Marcus" class="tab-content">
+            <p><strong>Marcus Henrique</strong> — Criou a seção de <em>Comparação de Assinaturas</em>, com os planos Básico, Plus e Gold.</p>
+        </div>
+        <div id="Raul" class="tab-content">
+            <p><strong>Raul Balby</strong> — Implementou a página de <em>Pagamento</em>, incluindo validações de formulário e fluxo de finalização.</p>
+        </div>
+        <div id="Yago" class="tab-content">
+            <p><strong>Yago Ramos</strong> — Responsável pela página de <em>Finalização</em>, com mensagem de parabéns e botão de retorno ao Home.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Para mais informações, entre em contato conosco através do email: <strong>ucb@gmail.com.br</strong></p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

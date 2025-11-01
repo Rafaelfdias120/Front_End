@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagamento - UCB Smart Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 { margin: 0; font-size: 20px; }
+        nav { display: flex; gap: 15px; }
+        nav a {
+            background: #0066cc;
+            padding: 8px 15px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav a:hover { background: #3399ff; }
+
+        h2 {
+            color: #003366;
+            text-align: center;
+            margin-top: 30px;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .finalizar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .finalizar button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .finalizar button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            border-top: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UCB - Smart Assistente</h1>
+        <nav>
+            <a href="1.Index.html">Home</a>
+            <a href="2.Depoimentos.html">Depoimentos</a>
+            <a href="3.SobreNós.html">Sobre Nós</a>
+            <a href="6.Midia.html">Mídia</a>
+        </nav>
+    </header>
+
+    <h2>Informações de Pagamento</h2>
+    <form action="5.Cfinalizada.html" method="get">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" placeholder="EX: MARIA SILVA" pattern="[A-Za-zÀ-ÿ\s]+" title="Use apenas letras e espaços" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+        <label for="cartao">Número do Cartão</label>
+        <input type="text" id="cartao" name="cartao" placeholder="1234567812345678" pattern="\d{16}" maxlength="16" title="Digite exatamente 16 números" required>
+
+        <label for="validade">Validade</label>
+        <input type="text" id="validade" name="validade" placeholder="MMAA" pattern="(0[1-9]|1[0-2])\d{2}" maxlength="4" title="Digite os 4 números da validade (MMAA)" required>
+
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc" name="cvc" placeholder="123" pattern="\d{3}" maxlength="3" title="Digite os 3 números do CVC" required>
+
+        <div class="finalizar">
+            <button type="submit">Finalizar</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>Para mais informações, entre em contato conosco através do email: <strong>ucb@gmail.com.br</strong></p>
+    </footer>
+</body>
+</html>

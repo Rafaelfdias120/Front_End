@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgray;
+    margin: 0;
+}
+
+.Perfil {
+    background-color: aqua;
+
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.Estudante1 {
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 300px;
+    height: 160px;
+    padding-left: 10px;
+    margin-left: 40px;
+    padding-top: 15px;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 2px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.Estudante2 {
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 300px;
+    height: 160px;
+    padding-left: 10px;
+    margin-left: 40px;
+    padding-top: 15px;
+}
+
+.Estudante3 {
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 300px;
+    height: 160px;
+    padding-left: 10px;
+    margin-left: 40px;
+    padding-top: 15px;
+}
+
+a:hover {
+    background-color: black;
+}
+
+.conteiner {
+    justify-content: center;
+    display: flex;
+}

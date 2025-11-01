@@ -1,0 +1,52 @@
+.T1{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 5px #f0f, 
+                 0 0 10px #f0f, 
+                 0 0 20px #0ff, 
+                 0 0 40px #0ff;
+  }
+  
+
+
+/*Seletor de Tag*/
+h1{
+    color: blue;
+    text-align: center;
+}
+
+/*Seletor de classe*/
+.p1{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+/*Seletor de ID*/
+#p2{
+    color: rgba(0, 255, 255, 0.992);
+    font-size: 25px;
+}
+
+/*Seletor Universal*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Seletor de grupo*/
+h1, h3{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-image: url('Elden-Ring.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.Conteudo h4{
+    color: rgb(234, 255, 0);
+}
