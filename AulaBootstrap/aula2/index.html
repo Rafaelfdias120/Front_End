@@ -38,92 +38,108 @@
       <header>
         <div class="bg-dark text-white text-center py-5">
             <h1>BEM-VINDO</h1>
-            <p>GANHE 5000 GRATIS, CLIQUE ABAIXO</p>
+            <p>Inicie agora, CLIQUE ABAIXO</p>
             <a href="zoera.jpg" class="btn btn-light">Saiba mais</a>
         </div>
       </header>
 
     <!--Seção de cards-->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center">Melhores ideias</h2>
-        <div class="row">
-            <div class="col-md=4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+    <section class="py-5">
+      <div class="container">
+          <h2 class="text-center">Melhores Alunos:</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Aluno 1</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center">Melhores ideias</h2>
-        <div class="row">
-            <div class="col-md=4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-dark">Go somewhere</a>
+                  </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-4">
+                  <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Aluno 2</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                      <a href="#" class="btn btn-dark">Go somewhere</a>
+                  </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-4">
+                  <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Aluno 3</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                      <a href="#" class="btn btn-dark">Go somewhere</a>
+                  </div>
+                  </div>
+              </div>
+          </div>   
+      </div>
+      </section>
 
     <!--Carousel: Depoimentos-->
-    <section class="btn-light py-5">
-        <div class="container">
-            <h1>Depoimentos</h1>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <p>Pessoa 1</p>
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                      <p>Pessoa 2</p>
-                      <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <p>Pessoa 3</p>
-                    <img src="..." class="d-block w-100" alt="...">
+    <section class="bg-light py-5">   
+      <div class="container">
+          <h2 class="text-center">Depoimentos</h2>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                      <p>"Aluno 1: depoimento"</p>
+                      <footer>Aluno 1</footer>
                   </div>
-                </div>
+                  <div class="carousel-item text-center">
+                      <p>Aluno 2</p>
+                      <footer>Aluno 2</footer>
+                  </div>
+                  <div class="carousel-item text-center">
+                      <p>Aluno 3</p>
+                      <footer>Aluno 3</footer>
+                  </div>
               </div>
-        </div>
+          </div>
+      </div>
     </section>
 
     <!--Modal-->
-    <div class="container">
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+    <!-- Button trigger modal -->
+    <section class="text-center py-5">
+      <h2>Quer saber mais ?</h2>
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Fale com a turma
   </button>
+</section>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Entre em contato</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
+          <p>Envie-nos uma mensagem e retornaremos em breve</p>
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Nome Completo">
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" class="form-control" rows="4" placeholder="Digite sua mensagem"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+      </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          
         </div>
       </div>
     </div>
@@ -131,8 +147,10 @@
 </div>
 
     <!--Rodapé da página-->
-    <footer>
-        --Rodapé do site
+    <footer class="bg-dark py-3 text-white text-center">
+      <p class="mp-0">
+        &copy; Desenvolvimento-front-end. Todos os direitos reservados
+      </p>
     </footer>
 
     <!--Link do javascript-->
